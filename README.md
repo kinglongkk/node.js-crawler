@@ -6,4 +6,6 @@ http://nodejs.org/download/
 npm install
 ## 运行程序
 node app.js
+### 如果不能正常访问Github请安装红杏翻墙
+http://honx.in/i/VEokH4IaAyucRg6k
 
