@@ -32,11 +32,8 @@ request(url, function(error, response, body) {
         });
         // 每次只执行一个异步操作
         async.mapSeries(links, function(item, callback) {
-            console.log(item);
-            setTimeout(function() {
-                download(item, dir, Math.floor(Math.random()*100000) + item.substr(-4,4));
-                callback(null, item);
-            }, 100);
+            download(item, dir, Math.floor(Math.random()*100000) + item.substr(-4,4));
+            callback(null, item);
         }, function(err, results) {});
     }
 });
